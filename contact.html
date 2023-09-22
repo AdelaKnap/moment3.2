@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adelas webbplats</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<!--Kontaktsidan med en container som sedan rymmer header (här finns logotypen samt meny-länkarna), en section med innehållet (ett kontaktformulär) och en footer.-->
+
+<body>
+    <div class="container">
+        <header>
+
+            <div class="logo">
+                <a href="index.html"><img src="bilder/logotyp.svg" alt="Logotyp"></a>
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="index.html"> Hem</a></li>
+                    <li> <a href="courses.html"> Kurser</a></li>
+                    <li><a href="pictures.html"> Bilder</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contact">
+
+            <h2>Kontakta mig via e-post eller med nedanstående kontaktformulär</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Kontaktformulär:</legend>
+
+                    <label>Namn:<br>
+                        <input type="text" name="Namn" placeholder="Förnamn Efternamn"></label><br>
+
+                    <label>E-postadress:<br>
+                        <input type="email" name="E-postadress" placeholder="namn@domän.se"></label><br><br>
+
+                    <label>Yrke:</label>
+                    <select name="profession">
+                        <option value="webbutvecklare">Webbutvecklare</option>
+                        <option value="webbdesigner">Webbdesigner</option>
+                        <option value="projektledare">Projektledare</option>
+                        <option value="front-end utvecklare">Front-end utvecklare</option>
+                        <option value="back-end utvecklare">Back-end utvecklare</option>
+                    </select>
+                    <br><br>
+
+                    <label> Nyhetsbrev:</label>
+                    <input type="checkbox" name="newsletter" value="nyhetsbrev"><br><br>
+
+                    <label>Anställd:</label>
+                    <input type="radio" name="employee" value="ja"> Ja
+                    <input type="radio" name="employee" value="nej"> Nej <br><br>
+
+                    <label>Meddelande:</label><br>
+                    <textarea name="message" cols="50" rows="8"></textarea><br><br>
+
+                    <input type="submit" value="Skicka">
+                    <input type="reset" value="Nollställ">
+
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            Kurs:GT057G, 2023-09-07, Adela Knap, <a href="mailto:adkn2300@student.miun.se"> Maila Adela!</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>

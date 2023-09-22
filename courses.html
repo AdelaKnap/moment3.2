@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adelas webbplats</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+
+<!--Kurssidan med en container som sedan rymmer header (här finns logotypen samt meny-länkarna), en section med innehållet (tabeller) och en footer.
+    h2 rubriken och varannan av raderna i tabellerna har ett id för att kunna göra anpassningar till den specifiken kod-delen i css.-->
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="bilder/logotyp.svg" alt="Logotyp"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Hem</a></li>
+                    <li> <a href="courses.html"> Kurser</a></li>
+                    <li><a href="pictures.html"> Bilder</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <h2 id="whiteh1">Alla spännande kurser jag kommer att läsa!</h2>
+
+            <section class="table">
+                <h3>Läsår 1</h3>
+
+                <table>
+                    <thead>
+
+                        <tr>
+                            <th>Kurskod</th>
+                            <th>Kursnamn</th>
+                            <th>Progression</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DT057G</td>
+                            <td>Webbutveckling 1</td>
+                            <td>A</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT048G</td>
+                            <td>Introduktion till programmering i JavaScript</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>DT200G</td>
+                            <td>Grafisk teknik för webb</td>
+                            <td>A</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT068G</td>
+                            <td>Webbanvändbarhet</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT003G</td>
+                            <td>Databaser</td>
+                            <td>A</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT211G</td>
+                            <td>Frontend-baserad webbutveckling</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT207G</td>
+                            <td>Backend-baserad webbutveckling</td>
+                            <td>B</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT208G</td>
+                            <td>Programmering i TypeScript</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Läsår 1</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <br>
+                <br>
+
+                <h3>Läsår 2</h3>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kurskod</th>
+                            <th>Kursnamn</th>
+                            <th>Progression</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IK060G</td>
+                            <td>Projektledning</td>
+                            <td>A</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT071G</td>
+                            <td>Programmering i C#.NET</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>DT193G</td>
+                            <td>Fullstack-utveckling med ramverk</td>
+                            <td>B</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT209G</td>
+                            <td>Webbutveckling för WordPress</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT191G</td>
+                            <td>Webbutveckling med .NET</td>
+                            <td>B</td>
+                        </tr>
+                        <tr class="even">
+                            <td>DT210G</td>
+                            <td>Fördjupad frontend-utveckling</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>DT140G</td>
+                            <td>Självständigt arbete</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Läsår 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </section>
+
+            <br>
+            <br>
+
+        </main>
+        <footer>
+            Kurs:GT057G, 2023-09-07, Adela Knap, <a href="mailto:adkn2300@student.miun.se"> Maila Adela!</a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

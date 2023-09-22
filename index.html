@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adelas webbplats</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+
+<!--Startsidan med en container som sedan rymmer header (här finns logotypen samt meny-länkarna), en section med innehållet (artiklar) och en footer.
+    Citatet på slutet har ett id för att kunna göra anpassningar till den specifiken kod-delen i css.-->
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="logo">
+                <img src="bilder/logotyp.svg" alt="Logotyp">
+            </div>
+
+            <nav>
+
+                <ul>
+                    <li><a href="index.html"> Hem</a></li>
+                    <li> <a href="courses.html">Kurser</a></li>
+                    <li><a href="pictures.html">Bilder</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="startsida">
+
+            <h1>Från lärare till webbutvecklare!</h1>
+
+            <h2>Här får du följa mina tre första dagar som webbutvecklar-student!</h2>
+
+            <article class="article1">
+                <h3>Dag 1</h3>
+
+                <a href="bilder/dator.jpg" target="_blank"><img id="datorbild" src="bilder/dator.jpg" alt="Bild på en dator."
+                        width="200" height="120"></a>
+
+                <p>2023-08-28</p>
+
+                <p>
+                    Dagen D och dags att starta datorn och köra! Den första dagen började men en
+                    introduktionsföreläsning
+                    för programmet och sedan <br>
+                    en introduktionsföreläsning för en av kurserna. Det var en dag fylld av information och det snurrade
+                    i
+                    huvudet när dagen började lida<br>
+                    mot sitt slut. Men samtidigt lät det som om de två kommande åren kommer att bli riktigt intressanta,
+                    om
+                    än utmanande för en som aldrig<br>
+                    programmerat tidigare.
+                </p>
+            </article>
+
+            <article class="article2">
+                <h3>Dag 2</h3>
+
+                <a href="bilder/bok.jpg" target="_blank"><img src="bilder/bok.jpg" alt="Bild på en bok." width="200"
+                        height="120"></a>
+
+                <p>2023-08-29</p>
+
+                <p>
+                    Dag 2 var det dags att bekanta sig med kurslitteraturen för en av kurserna. En bok som vid första
+                    anblick verkade som en tung bok <br> att läsa men som visade sig att vara luftigt uppbyggd och
+                    relativt lättläst. Så
+                    skönt! Dag 2 var det dags för introduktionen av den andra <br> kursen vi ska läsa. Det ska bli kul
+                    att
+                    lära sig allt nytt!
+                </p>
+            </article>
+
+            <article class="article3">
+                <h3>Dag 3</h3>
+
+                <a href="bilder/grusvag.jpg" target="_blank"> <img src="bilder/grusvag.jpg"
+                        alt="Bild på en grusväg i skogen." width="200" height="120"></a>
+                <p>2023-09-30</p>
+
+                <p>
+                    Inga föreläsningar för själva programmet den här dagen och det var dags att läsa in sig på teorin
+                    och ta
+                    tag i de allra första uppgifterna. <br>
+                    Det är inte helt lätt att ställa om sig till studielivet efter ett uppehåll på 12 år. Det är lätt
+                    att
+                    missa att ta pauser och att sitta i en dålig <br> ergonomisk ställning. Nacken började klaga så det
+                    passade
+                    bra med en lång skogspromenad i det fina vädret den här dagen.
+                </p>
+            </article>
+
+            <p id="citat">"There are two ways to write error-free programs; only the third one works." (Alan J. Perlis)</p>
+
+        </section> <br>
+
+        <footer>
+            Kurs:GT057G, 2023-09-07, Adela Knap, <a href="mailto:adkn2300@student.miun.se"> Maila Adela!</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>

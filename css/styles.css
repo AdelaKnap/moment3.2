@@ -1,0 +1,288 @@
+/*css som gäller hela webbplatsen*/
+
+* {
+    box-sizing: border-box;    /* Border-box för att lättare kunna räkna ut storleken inklusive allt innehåll.*/
+}
+
+body {                      /*Regler för det som finns i body.*/ 
+    width: 90%;             /*Här anges bredd, marginal(0 auto = 0 uppe och nerer och sedan centrerat utifrån övrigt innehåll), padding, textplacering och teckenangivelser (färg, snitt, storlek, höjd).*/                          
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;     
+    padding: 3em;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.container {                /*Rgeler för container som alla sidor har. Här anges bredd, max-bredd, textplacering, marginal och padding.*/
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo {
+    position: fixed;        /*Regel för att logotypen ska ha en fixed-positon (låst) och vilken position den ska ha.*/
+    top: 0%;
+    left: 6%;
+}
+
+
+nav ul {                 /*Regler för unordered-list med menyn. Ingen listdekoration.*/
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {                   /*Länk-listan ska ligga inline, alltså på rad.*/
+    display: inline;
+    margin: 0 auto;
+}
+
+nav a {                     /*Länkarna ska ligga inline-block, på rad men ändå kunna ändras utifrån resterande innehåll.*/
+    display: inline-block;    
+    margin: 0.5%;
+    padding: 1%;
+    list-style: none;
+    color: black;
+    font-size:large;
+}
+
+nav a:hover {
+    background-color: lightblue;     /*När muspekaren rörs över länken ändrar den färg till rosa.*/
+}
+
+nav a:visited {
+    color:blue;               /*När länken har besökts får den blå bakgrundsfärg.*/
+}
+
+nav a:active {
+    background-color: blueviolet;          /*Bakgrundsfärgen när det klickas på länken, när den precist är aktiv.*/
+}
+
+footer {
+    max-height:10%;
+    text-align: center;                  /*Regler för fotnoten.*/
+    padding: 10px;
+    margin: 0 auto;
+}
+
+footer a:hover {
+    background-color: azure;             /*När muspekaren förs över mail-länken i fotnoten ändrar den färg.*/
+}
+
+/*css startsida*/
+
+.startsida article {
+    width: 80%;                      /*Regler för artiklarna på startsidan*/
+    text-align:center;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+#citat {
+    position: relative;
+    width: 30%;
+    left: 0%;
+    font-size: 14px;
+    color: red;
+    font-style: italic;    
+}
+
+/*css sidan kurser*/
+
+main {
+    padding-top: 5%;    
+}
+
+#whiteh1 {
+    color: white;
+}
+
+.table h3 {
+    color: white;
+}
+
+table {                            /*Regler för tabellerna med bredd, textplacering, marginaler samt bakgrundsfärg.*/
+    width: 60%;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    background-color: azure;
+}
+
+th,
+td {
+    padding: 1%;
+}
+
+th {
+    text-transform: uppercase;               /*Regler för rubrikerna i tabellen med stora bokstäver, tabellramens tjocklek och färg mm.*/
+    border-bottom: 0.1em solid #111111;
+    border-top: 0.1em solid #111111;
+}
+
+tr.even {
+    background-color: lightgrey;           /*Anger att varannan rad i tabellen ska vara ljusgrå.*/
+}
+
+tr:hover {
+    background-color: lightblue;           /*Anger att bakgrundsfärgen när muspekaren förs över tabellen ska vara ljusblå.*/
+}
+
+/*css bakgrundsbilder*/
+
+body {
+    background-image: url("moln.jpg");      /*Bakgrundsbild till hela sidan, body.*/
+    background-size: cover;
+}
+
+main {
+    background-image: url("bakgrundsbild.jpg");   /*Bakgrundsbild till bakom tabellen om kurser.*/
+    background-size: cover;
+}
+
+/* css till sidan kontakt*/
+
+form {
+    width: 50%;                     /*Regler för formuläret med bredd, text till vänster, marginal, teckensmitt samt storlek.*/
+    text-align: left;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+legend {
+    font-weight: bold;      /*Regler för "nanmnet" på formuläret, i detta fall kontaktformulär, Fet text samt och stor stil.*/
+    font-size: large;
+}
+
+input[type="text"],        /*Regler för hur den inskrivna texten ska se ut samt utseende på rutan.*/
+input[type="email"] {
+    width: 80%;
+    padding: 1%;
+    margin: 1%;
+    font-size: 100%;
+    color: blue;
+}
+
+select {
+    color: blue;        /*Regler för texten i rull-listan, yrke.*/
+    font-size: 100%;
+    padding: 1%;
+}
+
+textarea {
+    font-size: 1.5em;     /*Regler för textrutan.*/
+    color: blue;
+}
+
+input[type="submit"],     /*Regler för skicka och nollställ knappen.*/
+input[type="reset"] {
+    color: blue;
+    font-size: large;
+    background-color: bisque;
+}
+
+/* css till startsidan för bilder*/
+
+.startpictures {
+    padding: 3%;
+    text-align: center;
+}
+
+nav ul li a[href="pictures2.html"]{
+    color: red;
+}
+
+nav ul li a[href="pictures3.html"]{
+    color: red;
+}
+
+#wetland {              /*Regler för bilder, centrerade, automatisk höjd samt max-bredd.*/
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+}
+
+#dustyvidhavet {
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.blue {
+    color: lightseagreen;      /*Regler för span som sätter olika färger på texten vattentema och skogstema. */
+}
+
+.green {
+    color: darkgreen;
+}
+
+/*css till sidan bilder 2 och bilder 3*/
+
+.right {
+    height: auto;       /*Högra spalten som flyter åt höger. 90% bred.*/
+    width: 90%;
+    float: right;
+}
+
+img.river {             /*Bilder i högra spalten.*/
+    height: auto;
+    max-width: 100%;
+}
+
+img.watercourse {
+    height: auto;
+    max-width: 100%;
+}
+
+img.lake {
+    height: auto;
+    max-width: 100%;
+}
+
+img.dustyiskog {
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+}
+
+img.forest {
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+}
+
+.left {                      /*Vänstra spalten som flyter åt höger, 10% bred.*/
+    float: left;
+    height: auto;
+    width: 10%;
+}
+
+.left ul{                   /*Regler till listan och länkarna i vänstra spalten.*/
+    padding: 1%;            
+    width: auto;
+    display:block;
+}
+
+.left ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.left a{
+    padding: 3%;
+    margin: 2%;
+    margin-top: 15%;
+}
+
+/*css sidan Om mig med en text med absolut postion*/
+
+#rubrikommig {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 20%;
+}

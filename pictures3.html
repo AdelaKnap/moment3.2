@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adelas webbplats</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+
+<!--Bildsida 3 med en container som sedan rymmer header (här finns logotypen samt meny-länkarna), en section till höger med innehållet (bilder), en section till vänster med länkar och footer.
+    Bilderna och rigth/left-sectionerna  har fått en class för att kunna göra anpassningar till den specifiken kod-delen i css.-->
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="bilder/logotyp.svg" alt="Logotyp">
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Hem</a></li>
+                    <li> <a href="courses.html"> Kurser</a></li>
+                    <li><a href="pictures.html"> Bilder</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2>Här kan du njuta av några skogsbilder.</h2>
+
+        <section class="right">
+            <img src="bilder/dusty3.jpg" alt="Bild på hund i granskog." class="dustyiskog">
+            <img src="bilder/granskog1.jpg" alt="Bild på en stig i en granskog." class="forest">
+        </section>
+
+        <section class="left">
+            <nav>
+                <ul>
+                    <li><a href="pictures2.html">Bilder 2</a></li>
+                    <li><a href="pictures3.html">Bilder 3</a></li>
+                </ul>
+            </nav>
+        </section>
+        <br>
+
+        <footer>
+            Kurs:GT057G, 2023-09-07, Adela Knap, <a href="mailto:adkn2300@student.miun.se"> Maila Adela!</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
